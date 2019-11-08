@@ -4,36 +4,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bruno Mars Music Sampler</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <article>
     <h1>Bruno Mars and His Journey to Stardom</h1>
-    <img src="images/bruno_mars.jpg" alt="Photo of Bruno Mars singing">
-    <p>Photo by <a href="https://www.flickr.com/photos/nightterrorx/14662789092/in/photolist-okGCmu-fiNPJW-Wmp6r8-aS2yix-gToNPB-dC3NPV-VRHEEW-qn7UfL-9D4LGz-okJu1R-dmoKqC-ecrtvf-g2bnkd-aS2ycv-7THhwG-8WvQti-4QUpVz-dStbUn-aS2xyM-db71Bz-ffdrag-ans54p-pjBMis-3FRxCZ-ffsFJG-77jq8v-okZDHB-okzdFR-okM5Dy-cFubvj-fynkx5-7nLoZt-21nigrt-a3v2xM-aPD1UZ-jBYiuY-9US342-TxMo1v-a3xUgA-eeDpVk-a3xUqj-8cqzAs-a3xUko-5GUNP2-5Bq2Sd-jH97fe-2fL8c8D-aS2xDr-o45p7E-o45GbN/"> Daniel Gregory on Flickr.com</a></p>
+    <img id=cover_image src="images/bruno_mars.jpg" alt="Photo of Bruno Mars singing">
+    <p id="caption">Photo by <a href="https://www.flickr.com/photos/nightterrorx/14662789092/in/photolist-okGCmu-fiNPJW-Wmp6r8-aS2yix-gToNPB-dC3NPV-VRHEEW-qn7UfL-9D4LGz-okJu1R-dmoKqC-ecrtvf-g2bnkd-aS2ycv-7THhwG-8WvQti-4QUpVz-dStbUn-aS2xyM-db71Bz-ffdrag-ans54p-pjBMis-3FRxCZ-ffsFJG-77jq8v-okZDHB-okzdFR-okM5Dy-cFubvj-fynkx5-7nLoZt-21nigrt-a3v2xM-aPD1UZ-jBYiuY-9US342-TxMo1v-a3xUgA-eeDpVk-a3xUqj-8cqzAs-a3xUko-5GUNP2-5Bq2Sd-jH97fe-2fL8c8D-aS2xDr-o45p7E-o45GbN/"> Daniel Gregory on Flickr.com</a></p>
 
     <p>Bruno Mars is a successful pop artist who has recorded three studio albums and one EP. Despite being classified as a pop artist, his music is influenced by a variety of genres, like R&B, funk, soul, hip hop, reggae and rock. It takes elements from each genre of music and combines them to create cohesive, popular songs. </p>
 
+    <h2>Music</h2>
+      <div id="album_covers">
+        <img id="ep_image" class="images" src="images/ep_cover.jpg" alt="EP Cover: It's Better If You Don't Understand">
 
-    <img src="images/ep_cover.jpg" alt="EP Cover: It's Better If You Don't Understand">
-    <img src="images/Doo_Wops.jpg" alt="Album Cover: Doo-Wops & Hooligans">
-    <img src="images/unorthodox_jukebox.png" alt="Album Cover: Unorthodox Jukebox">
-    <img src="images/24K_magic.png" alt="Album Cover: 24K Magic">
+        <img id="doo_wops_image" class="images" src="images/Doo_Wops.jpg" alt="Album Cover: Doo-Wops & Hooligans">
 
+        <img id="uo_image" class="images" src="images/unorthodox_jukebox.png" alt="Album Cover: Unorthodox Jukebox">
 
-    <audio id="soundtrack" controls preload="auto">
-    	<source src="audio/ep.mp3" type="audio/mp3">
-    	<source src="audio/ep.ogg" type="audio/ogg">
+        <img id="24k_magic_image" class="images" src="images/24K_magic.png" alt="Album Cover: 24K Magic">
+      </div>
 
-      <source src="audio/doo-wops.mp3" type="audio/mp3">
-      <source src="audio/doo-wops.ogg" type="audio/ogg">
+      <div id="audio_files">
+        <div id="better" class="music">
+          <audio id="ep" controls preload="auto">
+            	<source src="audio/ep.mp3" type="audio/mp3">
+            	<source src="audio/ep.ogg" type="audio/ogg">
+          </audio>
+        </div>
 
-      <source src="audio/uo.mp3" type="audio/mp3">
-    	<source src="audio/uo.ogg" type="audio/ogg">
+        <div id="doo" class="music">
+          <audio id="dw" controls preload="auto">
+            <source src="audio/doo-wops.mp3" type="audio/mp3">
+            <source src="audio/doo-wops.ogg" type="audio/ogg">
+          </audio>
+        </div>
 
-      <source src="audio/24kmagic.mp3" type="audio/mp3">
-    	<source src="audio/24kmagic.ogg" type="audio/ogg">
-    </audio>
+        <div id="unorthodox" class="music">
+          <audio id="uo" controls preload="auto">
+            <source src="audio/uo.mp3" type="audio/mp3">
+          	<source src="audio/uo.ogg" type="audio/ogg">
+          </audio>
+        </div>
 
-  <footer>This tribute to the music of Bruno Mars was created by Dana Bryan. This is for a project using HTML5 audio controls and JavaScript. Click <a href="https://www.brunomars.com/">here</a> to go to the Bruno Mars website, which has the latest information about him and his tour.</footer>
+        <div id="twentyfour" class="music">
+          <audio id="magic" controls preload="auto">
+            <source src="audio/24kmagic.mp3" type="audio/mp3">
+          	<source src="audio/24kmagic.ogg" type="audio/ogg">
+          </audio>
+        </div>
+
+        <div id="ep_info" class="info-div">
+          <p>It's Better If You Don't Understand</p>
+        </div>
+        <div id="first_album_info" class="info-div">
+          <p>Doo-Wops & Hooligans</p>
+        </div>
+        <div id="second_album_info" class="info-div">
+          <p>Unorthodox Jukebox</p>
+        </div>
+        <div id="third_album_info" class="info-div">
+          <p>24K Magic</p>
+        </div>
+      </div>
+
+    <footer><p>This tribute to the music of Bruno Mars was created by Dana Bryan. This is for a project using HTML5 audio controls and JavaScript. Click <a href="https://www.brunomars.com/">here</a> to go to the Bruno Mars website, which has the latest information about him and his tour.</p></footer>
+  </article>
+<script src="js/.js"></script>
 </body>
 </html>
